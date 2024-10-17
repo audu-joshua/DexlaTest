@@ -1,16 +1,8 @@
-"use client"
+"use client";
 import React, { useState } from 'react';
 import { dummyItems } from '@/utils/listing';
 
-interface CartItem {
-  image: string;
-  name: string;
-  price: number;
-}
-
-
-
-const Listing: React.FC<{ addToCart: (item: CartItem) => void }> = ({ addToCart }) => {
+const Listing: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
 
   const categories = ['All', 'Clothing', 'Accessories'];
@@ -43,13 +35,7 @@ const Listing: React.FC<{ addToCart: (item: CartItem) => void }> = ({ addToCart 
             <img src={item.image} alt={item.name} className="w-full h-48 object-cover rounded-lg mb-2" />
             <h3 className="font-bold">{item.name}</h3>
             <p className="text-gray-700">${item.price.toFixed(2)}</p>
-            <button
-  onClick={() => addToCart(item)} // This is correct
-  className="mt-2 bg-[#293a93] text-white rounded-full px-4 py-2"
->
-  Add to Cart
-</button>
-
+            {/* Removed the Add to Cart button */}
           </div>
         ))}
       </div>
