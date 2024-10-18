@@ -1,18 +1,16 @@
 "use client";
-import Link from 'next/link';
 import { useState } from 'react';
-import { FaBars, FaTimes, FaShoppingCart, FaUser, FaTimesCircle, FaTrash, FaPlus, FaMinus } from 'react-icons/fa';
+import {FaShoppingCart, FaUser, FaTimesCircle, FaTrash, FaPlus, FaMinus } from 'react-icons/fa';
 import { useCart } from '@/utils/cartcontext';
 import CheckoutModal from '@/components/Home/checkoutModal';
 
 const Header: React.FC = () => {
-  const [menuOpen, setMenuOpen] = useState(false); // State for mobile menu visibility
   const [cartOpen, setCartOpen] = useState(false); // State for cart dropdown visibility
   const [userOpen, setUserOpen] = useState(false); // State for user dropdown visibility
   const [checkoutOpen, setCheckoutOpen] = useState(false); // State for checkout modal visibility
   const [searchQuery, setSearchQuery] = useState(""); // State for search input
 
-  const { cart, addToCart, removeFromCart, increaseQuantity, decreaseQuantity, clearCart } = useCart();
+  const { cart, removeFromCart, increaseQuantity, decreaseQuantity, clearCart } = useCart();
 
   // Calculate total cart amount
   const totalAmount = cart.reduce((total, item) => total + item.price * item.quantity, 0);

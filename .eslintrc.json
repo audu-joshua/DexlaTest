@@ -1,6 +1,7 @@
 {
   "extends": ["next/core-web-vitals", "next/typescript"],
   "rules": {
-    "no-bitwise": "off" // Disable the no-bitwise rule
+    "no-bitwise": "off",
+    "react/no-unescaped-entities": "off"
   }
 }
