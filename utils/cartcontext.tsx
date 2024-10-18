@@ -91,7 +91,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
                 decreaseQuantity, // Providing the decreaseQuantity function
             }}
         >
-            {children} // Rendering children components
+            {children}
         </CartContext.Provider>
     );
 };
