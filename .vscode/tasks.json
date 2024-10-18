@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "dev",
+			"path": "dexlatest",
+			"problemMatcher": [],
+			"label": "npm: dev - dexlatest",
+			"detail": "next dev"
+		}
+	]
+}
