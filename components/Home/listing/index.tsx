@@ -16,7 +16,7 @@ const Listing = () => {
 
   return (
     <section className="py-8 px-3 md:px-6 lg:px-12">
-      <h2 className="text-2xl font-bold mb-4">Category</h2>
+      <h2 className="text-2xl text-black font-bold mb-4">Category</h2>
       <div className="flex space-x-2 mb-4">
         {/* Category filter buttons */}
         {categories.map((category) => (
