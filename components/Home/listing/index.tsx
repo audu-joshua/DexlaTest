@@ -25,7 +25,7 @@ const Listing = () => {
             onClick={() => setSelectedCategory(category)}
             className={`border rounded-full px-4 py-2 transition-colors duration-300 ${
               selectedCategory === category ? 'bg-[#293a93] text-white' : 'bg-white text-black'
-            } border-black`}
+            } border-[#293a93]`}
           >
             {category}
           </button>
