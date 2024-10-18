@@ -62,7 +62,7 @@ const Header: React.FC = () => {
 
           {/* Cart Dropdown */}
           {cartOpen && (
-            <div className="absolute right-0 top-0 h-screen md:h-auto w-64 bg-white shadow-lg border rounded-lg p-4 z-50">
+            <div className="absolute right-0 top-0 h-screen md:h-auto w-64 bg-white overflow-auto shadow-lg border rounded-lg p-4 z-50">
               <div className="flex justify-between items-center">
                 <h3 className="font-bold">Your Cart</h3>
                 <button onClick={() => setCartOpen(false)}>
