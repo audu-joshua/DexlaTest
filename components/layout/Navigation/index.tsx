@@ -95,7 +95,7 @@ const Header: React.FC = () => {
                       </button>
                     </div>
                   ))}
-                  <div className="border-t border-gray-300 pt-4">
+                  <div className="border-t border-gray-300 pt-4 mb-8">
                     <div className="flex justify-between">
                       <h4 className="font-bold">Total</h4>
                       <p className="font-bold">${totalAmount.toFixed(2)}</p>
